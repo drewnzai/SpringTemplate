@@ -3,6 +3,7 @@ package com.drew.SecurityTemplate.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -20,6 +21,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Table(name = "users")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 public class User {
     @Id

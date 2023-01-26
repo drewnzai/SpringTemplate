@@ -1,6 +1,5 @@
 package com.drew.SecurityTemplate;
 
-import com.drew.SecurityTemplate.services.UserDetailsServiceImpl;
 import com.drew.SecurityTemplate.utils.JwtFilter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,9 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig{
 
     @Autowired
-    private final UserDetailsServiceImpl userDetailsService;
-
-    private final AuthenticationProvider authenticationProvider;
+    private AuthenticationProvider authenticationProvider;
 
 
     @Autowired
